@@ -1,18 +1,18 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>Arena of Titans</title>
-<script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+<script async src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
 <link rel="stylesheet" href="style.css">
 <script type="importmap">{"imports":{"three":"./three.module.min.js"}}</script>
 </head><body>
 <canvas id="c"></canvas>
 <div id="labels"></div>
 <div id="hud" class="hide">
- <div id="hpwrap"><div id="hname"></div><div class="bar"><div id="hpbar"></div></div></div>
+ <div id="hpwrap"><div id="hname"></div><div class="bar"><div id="hpbar"></div></div><div class="bar stw"><div id="stbar"></div></div></div>
  <div id="stageinfo"></div><div id="timer"></div>
- <button id="pauseB" class="ib">II</button>
+ <button id="pauseB" class="ib">II</button><button id="muteB" class="ib">🔊</button>
  <div id="joy"><div id="knob"></div></div>
- <button id="atkB" class="act">⚔</button><button id="spB" class="act sp"><span id="spI">✦</span><div id="spCd"></div></button><button id="dashB" class="act dash">➤</button>
+ <button id="atkB" class="act">⚔<small>HOLD: HEAVY</small></button><button id="spB" class="act sp"><span id="spI">✦</span><div id="spCd"></div><small>SPECIAL</small></button><button id="dashB" class="act dash">➤<small>ROLL</small></button><button id="jumpB" class="act jmp">⤒<small>JUMP</small></button><button id="blockB" class="act blk">🛡<small>PARRY</small></button><button id="grabB" class="act grb">✊<small>THROW</small></button><button id="ultB" class="act ult"><div id="ultF"></div><span>⚡</span><small>ULTIMATE</small></button><div id="lbox"></div>
  <div id="banner"></div><div id="combo"></div><div id="bcoin">🪙 0</div><div id="tut" class="hide"></div>
 </div>
 <div id="screens"></div>
